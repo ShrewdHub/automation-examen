@@ -30,6 +30,6 @@ for sw in switches:
     filename = f"configbackups/{sw['name']}-backup.ios"
 
     with open(filename, "w") as f:
-        f.write(config)
+        f.write(str(config))
 
     conn.disconnect()
